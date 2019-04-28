@@ -1,0 +1,59 @@
+{
+  "name": "svelte-photogram",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grinat/svelte-photogram.git"
+  },
+  "author": "Gabdrashitov Rinat <paladin2012gnu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grinat/svelte-photogram/issues"
+  },
+  "homepage": "https://github.com/grinat/svelte-photogram#readme",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server --content-base public",
+    "test": "cross-env NODE_ENV=test mocha --require @babel/register --require @babel/polyfill --require test/utils/setup.js",
+    "start": "node static.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
+    "@babel/plugin-transform-regenerator": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@curi/router": "2.0.0-beta.16",
+    "@curi/svelte": "2.0.0-beta.0",
+    "@hickory/browser": "^2.0.0-beta.13",
+    "axios": "^0.18.0",
+    "browser-image-manipulation": "^0.2.1",
+    "bulma": "^0.7.4",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "svelte": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.4.4",
+    "acorn": "^6.1.1",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "jsdom": "^15.0.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "mocha": "^6.1.4",
+    "serve": "^11.0.0",
+    "style-loader": "^0.23.1",
+    "svelte-loader": "2.13.3",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

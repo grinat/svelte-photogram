@@ -1,0 +1,23 @@
+.DS_Store
+node_modules/
+dist/
+dist_test/
+dist-green/
+!dist-green/.gitkeep
+npm-debug.log
+yarn-error.log
+.vers/
+.plugins/
+.need/
+
+# parcel cache
+.cache
+
+selenium-debug.log
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
