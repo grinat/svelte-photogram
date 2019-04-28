@@ -14,6 +14,7 @@
   "homepage": "https://github.com/grinat/svelte-photogram#readme",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
+    "heroku-postbuild": "npm run test && npm run build",
     "dev": "webpack-dev-server --content-base public",
     "test": "cross-env NODE_ENV=test mocha --require @babel/register --require @babel/polyfill --require test/utils/setup.js",
     "start": "node static.js"
