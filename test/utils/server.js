@@ -4,16 +4,16 @@ const app = express()
 
 const Img = () => ({
   path: 'image.jpg',
-  nsfwScore: 0.4,
+  nsfwScore: 0.1,
   createdAt: +new Date()
 })
 
 function initAndRun(config) {
-  app.get('/faap/v1/sv_photo/*', function(req, res) {
+  app.get('/faap/v1/sv_photo/*', (req, res) => {
     res.send(new Img()).end()
   })
 
-  app.get('/faap/v1/sv_photo', function(req, res) {
+  app.get('/faap/v1/sv_photo', (req, res) => {
     res.send({
       data: [
         new Img()
