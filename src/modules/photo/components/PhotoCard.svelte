@@ -18,7 +18,7 @@ function onImageLoadError() {
   showSmall = true
 }
 
-const formatedDate = moment(item.createdAt, 'x').format('MMMM Do YYYY, h:mm')
+const formatedDate = moment(item.createdAt, 'x').format('MMMM Do YYYY, H:mm')
 </script>
 
 
